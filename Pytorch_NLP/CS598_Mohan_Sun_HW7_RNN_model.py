@@ -58,22 +58,23 @@ class LockedDropout(nn.Module):
         return mask * x
 
 class RNN_model(nn.Module):
-    def __init__(self, vocab_size, no_of_hidden_units):
+    def __init__(self, vocab_size, no_of_hidden_units, switches = [False, False, False]):
         super(RNN_model, self).__init__()
 
+        self.switches = switches
         self.embedding = nn.Embedding(vocab_size, no_of_hidden_units)#padding_idx=0)
 
         self.lstm1 = StatefulLSTM(no_of_hidden_units, no_of_hidden_units)
-        self.bn_lstm1 = nn.BatchNorm1d(no_of_hidden_Units)
-        self.dropout1 = LockedDropout(dropout)#nn.Dropout(p=dropout)
+        self.bn_lstm1 = nn.BatchNorm1d(no_of_hidden_units)
+        self.dropout1 = LockedDropout() if not switches[0] else nn.Dropout(p=0.5)
 
-        self.lstm2 = StatefulLSTM(no_of_hidden_units, no_of_hidden_units)
-        self.bn_lstm2 = nn.BatchNorm1d(no_of_hidden_Units)
-        self.dropout2 = LockedDropout(dropout)#nn.Dropout(p=dropout)
+        if switches[1]:
+            self.lstm2 = StatefulLSTM(no_of_hidden_units, no_of_hidden_units)
+            self.bn_lstm2 = nn.BatchNorm1d(no_of_hidden_units)
+            self.dropout2 = LockedDropout() if not switches[0] else nn.Dropout(p=0.5)
 
         self.fc_output = nn.Linear(no_of_hidden_units, 1)
-        #self.loss = nn.CrossEntropyLoss()
-        self.loss = nn.BCEWithLogitsLoss()
+        self.loss = nn.BCEWithLogitsLoss() if not switches[2] else nn.CrossEntropyLoss()
 
     def reset_state(self, twice=False):
         self.lstm1.reset_state()
@@ -82,23 +83,82 @@ class RNN_model(nn.Module):
             self.lstm2.reset_state()
             self.dropout2.reset_state()
 
-    def forward(self, x, t, twice=False, train=True):
+    def forward(self, x, t, train=True):
         embed = self.embedding(x) #[batch_size, time_steps, features]
 
         no_of_timesteps = embed.shape[1]
 
-        self.reset_state(twice)
-        
+        self.reset_state(self.switches[1])
+
         outputs = []
         for i in range(no_of_timesteps):
             h = self.lstm1(embed[:,i,:])
             h = self.bn_lstm1(h)
-            h = self.dropout(h, 0.5, train)
+            dargs = [h, 0.5, train] if self.switches[0] else [h]
+            h = self.dropout(*dargs)
 
-            if twice:
+            if self.switches[1]:
                 h = self.lstm2(h)
                 h = self.bn_lstm2(h)
-                h = self.dropout2(h, 0.3, train)
+                dargs = [h, 0.3, train] if self.switches[0] else [h]
+                h = self.dropout2(*dargs)
+
+            outputs.append(h)
+
+        outputs = torch.stack(outputs) #[time_steps, batch_size, features]
+        outputs = outputs.permute(1,2,0) #[batch_size, features, time_steps]
+
+        pool = nn.MaxPool1d(no_of_timesteps)
+        h = pool(outputs)
+        h = h.view(h.size(0),-1)
+        #h = self.dropout(h)
+
+        h = self.fc_output(h)
+
+        return self.loss(h[:,0],t), h[:,0]
+
+class RNN_model_GloVe(nn.Module):
+    def __init__(self, no_of_hidden_units, switches=[False, False, False]):
+        super(RNN_model, self).__init__()
+
+        self.switches = switches
+
+        self.lstm1 = StatefulLSTM(300, no_of_hidden_units)
+        self.bn_lstm1 = nn.BatchNorm1d(no_of_hidden_units)
+        self.dropout1 = LockedDropout() if not switches[0] else nn.Dropout(p=0.5)
+
+        if switches[1]:
+            self.lstm2 = StatefulLSTM(no_of_hidden_units, no_of_hidden_units)
+            self.bn_lstm2 = nn.BatchNorm1d(no_of_hidden_units)
+            self.dropout2 = LockedDropout() if switches[0] else nn.Dropout(p=0.5)
+
+        self.fc_output = nn.Linear(no_of_hidden_units, 1)
+        self.loss = nn.BCEWithLogitsLoss() if not switches[2] else nn.CrossEntropyLoss()
+
+    def reset_state(self, twice=False):
+        self.lstm1.reset_state()
+        self.dropout1.reset_state()
+        if twice:
+            self.lstm2.reset_state()
+            self.dropout2.reset_state()
+
+    def forward(self, x, t, train=True):
+        no_of_timesteps = x.shape[1]
+
+        self.reset_state(self.switches[1])
+
+        outputs = []
+        for i in range(no_of_timesteps):
+            h = self.lstm1(x[:,i,:])
+            h = self.bn_lstm1(h)
+            dargs = [h, 0.5, train] if self.switches[0] else [h]
+            h = self.dropout(*dargs)
+
+            if self.switches[1]:
+                h = self.lstm2(h)
+                h = self.bn_lstm2(h)
+                dargs = [h, 0.3, train] if self.switches[0] else [h]
+                h = self.dropout2(*dargs)
 
             outputs.append(h)
 
