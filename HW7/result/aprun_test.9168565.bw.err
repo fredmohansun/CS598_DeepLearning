@@ -1,5 +1,0 @@
-terminate called after throwing an instance of 'std::runtime_error'
-  what():  $ Torch: not enough memory: you tried to allocate 0GB. Buy new RAM! at /dev/shm/cmaclean/python-single/portage/sci-libs/caffe2-0.4.1/work/pytorch-0.4.1/aten/src/TH/THGeneral.cpp:204
-Child terminated with signal 6. Core dumped.
-aprun: file 2 not found
-aprun: Exiting due to errors. Application aborted

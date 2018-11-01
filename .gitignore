@@ -4,3 +4,5 @@ data/
 *.model
 *.tar.gz
 .DS_Store
+*.pdf
+*.tex
