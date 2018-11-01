@@ -1,0 +1,84 @@
+----------------------------------------
+Begin Torque Prologue on nid27559
+at Wed Oct 10 00:27:46 CDT 2018
+Job Id:			9090599.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		CIFAR100_ResNet_Part2
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=10:00:00
+Queue:			normal
+Account:		bauh
+End Torque Prologue:  0.117 elapsed
+----------------------------------------
+
+
+
+
+Files already downloaded and verified
+Files already downloaded and verified
+Data is ready...
+Cuda is set up...
+Start Training...
+Epoch:0, Running Loss: 1.994436, Accuracy: 46.750000%
+Test Accuracy: 48.910000%
+Epoch:1, Running Loss: 1.300918, Accuracy: 62.602000%
+Test Accuracy: 57.650000%
+Epoch:2, Running Loss: 1.057307, Accuracy: 69.224000%
+Test Accuracy: 61.910000%
+Epoch:3, Running Loss: 0.893192, Accuracy: 73.508000%
+Test Accuracy: 65.760000%
+Epoch:4, Running Loss: 0.768240, Accuracy: 76.838000%
+Test Accuracy: 65.750000%
+Epoch:5, Running Loss: 0.658365, Accuracy: 80.114000%
+Test Accuracy: 68.100000%
+Epoch:6, Running Loss: 0.468307, Accuracy: 85.306000%
+Test Accuracy: 68.470000%
+Epoch:7, Running Loss: 0.405564, Accuracy: 87.416000%
+Test Accuracy: 69.610000%
+Epoch:8, Running Loss: 0.355334, Accuracy: 88.866000%
+Test Accuracy: 69.120000%
+Epoch:9, Running Loss: 0.318480, Accuracy: 89.988000%
+Test Accuracy: 69.310000%
+Epoch:10, Running Loss: 0.295692, Accuracy: 90.754000%
+Test Accuracy: 68.470000%
+Epoch:11, Running Loss: 0.257229, Accuracy: 91.790000%
+Test Accuracy: 68.400000%
+Epoch:12, Running Loss: 0.239775, Accuracy: 92.530000%
+Test Accuracy: 70.970000%
+Epoch:13, Running Loss: 0.225860, Accuracy: 93.018000%
+Test Accuracy: 69.350000%
+Epoch:14, Running Loss: 0.205196, Accuracy: 93.646000%
+Test Accuracy: 70.310000%
+Epoch:15, Running Loss: 0.208233, Accuracy: 93.670000%
+Test Accuracy: 67.720000%
+Epoch:16, Running Loss: 0.182563, Accuracy: 94.436000%
+Test Accuracy: 69.980000%
+Epoch:17, Running Loss: 0.170357, Accuracy: 94.712000%
+Test Accuracy: 70.350000%
+Epoch:18, Running Loss: 0.164046, Accuracy: 95.062000%
+Test Accuracy: 70.150000%
+Epoch:19, Running Loss: 0.152231, Accuracy: 95.296000%
+Test Accuracy: 69.150000%
+Epoch:20, Running Loss: 0.162083, Accuracy: 95.078000%
+Test Accuracy: 70.260000%
+Epoch:21, Running Loss: 0.142499, Accuracy: 95.672000%
+Test Accuracy: 72.130000%
+Epoch:22, Running Loss: 0.139546, Accuracy: 95.802000%
+Test Accuracy: 71.080000%
+Epoch:23, Running Loss: 0.127767, Accuracy: 96.142000%
+Test Accuracy: 70.580000%
+Epoch:24, Running Loss: 0.131981, Accuracy: 96.058000%
+Test Accuracy: 70.720000%
+Epoch:25, Running Loss: 0.124241, Accuracy: 96.204000%
+Test Accuracy: 70.800000%
+Epoch:26, Running Loss: 0.121514, Accuracy: 96.424000%
+Test Accuracy: 70.560000%
+Epoch:27, Running Loss: 0.111904, Accuracy: 96.718000%
+Test Accuracy: 70.870000%
+Epoch:28, Running Loss: 0.106361, Accuracy: 96.720000%
+Test Accuracy: 71.430000%
+Epoch:29, Running Loss: 0.105953, Accuracy: 96.750000%
+Test Accuracy: 71.210000%
+Training done... Now testing...
+Test Accuracy: 71.210000%
+Application 70090491 resources: utime ~10108s, stime ~2334s, Rss ~1622588, inblocks ~2096937, outblocks ~128583

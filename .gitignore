@@ -1,0 +1,6 @@
+*.npy
+*.txt
+data/
+*.model
+*.tar.gz
+.DS_Store

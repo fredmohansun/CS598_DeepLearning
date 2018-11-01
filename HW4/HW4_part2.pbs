@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16:xk
+#PBS -N CIFAR100_ResNet_Part2
+#PBS -l walltime=10:00:00
+#PBS -e result/$PBS_JOBNAME.$PBS_JOBID.err
+#PBS -o result/$PBS_JOBNAME.$PBS_JOBID.out
+#PBS -M mohans2@illinois.edu
+cd /u/training/tra437/scratch/CS598/HW4/ 
+. /opt/modules/default/init/bash
+module load bwpy/2.0.0-pre1
+module load cudatoolkit
+aprun -n 1 -N 1 python CS598_Mohan_Sun_HW4_part2.py 2

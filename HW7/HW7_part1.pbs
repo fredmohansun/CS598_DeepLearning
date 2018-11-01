@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16:xk
+#PBS -N Discriminator_only
+#PBS -l walltime=05:00:00
+#PBS -e result/$PBS_JOBNAME.$PBS_JOBID.err
+#PBS -o result/$PBS_JOBNAME.$PBS_JOBID.out
+#PBS -M mohans2@illinois.edu
+cd /u/training/tra437/scratch/CS598/HW7/
+. /opt/modules/default/init/bash
+module load bwpy/2.0.0-pre2
+module load cudatoolkit
+for batch_size in 200
+do
+    for max_epoch in 6
+    do
+        for vocab_size in 8000
+        do
+            aprun -n 1 -N 1 python CS598_Mohan_Sun_HW7_part1_BOW_sentiment.py --ADAM --lr lr 2
+        done
+    done
+done

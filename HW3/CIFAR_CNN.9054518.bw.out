@@ -1,0 +1,75 @@
+----------------------------------------
+Begin Torque Prologue on nid27562
+at Fri Sep 28 11:28:43 CDT 2018
+Job Id:			9054518.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		CIFAR_CNN
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=05:00:00
+Queue:			normal
+Account:		bauh
+End Torque Prologue:  0.124 elapsed
+----------------------------------------
+
+
+
+
+Files already downloaded and verified
+Files already downloaded and verified
+Data is ready...
+Initialization is done...
+Cuda is set up...
+Start Training...
+Epoch:0, Running Loss: 1.781260, Accuracy: 35.950000%
+Epoch:1, Running Loss: 1.356809, Accuracy: 50.106000%
+Epoch:2, Running Loss: 1.175584, Accuracy: 57.506000%
+Epoch:3, Running Loss: 1.064250, Accuracy: 61.978000%
+Epoch:4, Running Loss: 0.983074, Accuracy: 64.982000%
+Epoch:5, Running Loss: 0.916691, Accuracy: 67.530000%
+Epoch:6, Running Loss: 0.859385, Accuracy: 69.556000%
+Epoch:7, Running Loss: 0.819016, Accuracy: 71.306000%
+Epoch:8, Running Loss: 0.785221, Accuracy: 72.488000%
+Epoch:9, Running Loss: 0.763550, Accuracy: 73.278000%
+Epoch:10, Running Loss: 0.747779, Accuracy: 73.794000%
+Epoch:11, Running Loss: 0.715058, Accuracy: 74.982000%
+Epoch:12, Running Loss: 0.703478, Accuracy: 75.496000%
+Epoch:13, Running Loss: 0.679156, Accuracy: 76.260000%
+Epoch:14, Running Loss: 0.666800, Accuracy: 76.814000%
+Epoch:15, Running Loss: 0.653277, Accuracy: 77.316000%
+Epoch:16, Running Loss: 0.641132, Accuracy: 77.738000%
+Epoch:17, Running Loss: 0.624717, Accuracy: 78.342000%
+Epoch:18, Running Loss: 0.609203, Accuracy: 78.836000%
+Epoch:19, Running Loss: 0.601073, Accuracy: 79.174000%
+Epoch:20, Running Loss: 0.590844, Accuracy: 79.446000%
+Epoch:21, Running Loss: 0.579522, Accuracy: 79.866000%
+Epoch:22, Running Loss: 0.574878, Accuracy: 80.072000%
+Epoch:23, Running Loss: 0.563904, Accuracy: 80.264000%
+Epoch:24, Running Loss: 0.549379, Accuracy: 80.876000%
+Epoch:25, Running Loss: 0.545697, Accuracy: 81.116000%
+Epoch:26, Running Loss: 0.539926, Accuracy: 81.264000%
+Epoch:27, Running Loss: 0.534417, Accuracy: 81.498000%
+Epoch:28, Running Loss: 0.518634, Accuracy: 82.108000%
+Epoch:29, Running Loss: 0.512487, Accuracy: 82.368000%
+Epoch:30, Running Loss: 0.508051, Accuracy: 82.334000%
+Epoch:31, Running Loss: 0.501857, Accuracy: 82.672000%
+Epoch:32, Running Loss: 0.498956, Accuracy: 82.814000%
+Epoch:33, Running Loss: 0.488830, Accuracy: 83.016000%
+Epoch:34, Running Loss: 0.482783, Accuracy: 83.394000%
+Epoch:35, Running Loss: 0.478633, Accuracy: 83.448000%
+Epoch:36, Running Loss: 0.474184, Accuracy: 83.666000%
+Epoch:37, Running Loss: 0.464908, Accuracy: 84.014000%
+Epoch:38, Running Loss: 0.458383, Accuracy: 84.146000%
+Epoch:39, Running Loss: 0.456374, Accuracy: 84.188000%
+Epoch:40, Running Loss: 0.450830, Accuracy: 84.448000%
+Epoch:41, Running Loss: 0.444708, Accuracy: 84.664000%
+Epoch:42, Running Loss: 0.440592, Accuracy: 84.776000%
+Epoch:43, Running Loss: 0.432741, Accuracy: 85.078000%
+Epoch:44, Running Loss: 0.427147, Accuracy: 85.186000%
+Epoch:45, Running Loss: 0.430572, Accuracy: 85.124000%
+Epoch:46, Running Loss: 0.422530, Accuracy: 85.362000%
+Epoch:47, Running Loss: 0.422910, Accuracy: 85.260000%
+Epoch:48, Running Loss: 0.410511, Accuracy: 85.916000%
+Epoch:49, Running Loss: 0.414120, Accuracy: 85.736000%
+Training done... Now testing...
+Test Accuracy: 83.100000%
+Application 69905944 resources: utime ~2115s, stime ~230s, Rss ~1569264, inblocks ~1895912, outblocks ~490018

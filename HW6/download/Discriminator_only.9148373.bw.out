@@ -1,0 +1,218 @@
+----------------------------------------
+Begin Torque Prologue on nid25339
+at Fri Oct 26 14:59:43 CDT 2018
+Job Id:			9148373.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		Discriminator_only
+Requested resources:	nodes=1:ppn=16:xk,walltime=05:00:00,neednodes=1:ppn=16:xk
+Queue:			normal
+Account:		bauh
+End Torque Prologue:  0.172 elapsed
+----------------------------------------
+
+
+
+
+Files already downloaded and verified
+Epoch 0: running_loss: 1.586580, train accuracy: 42.3317%
+Epoch 0: test accuracy: 52.5514%
+Epoch 1: running_loss: 1.206209, train accuracy: 57.2456%
+Epoch 1: test accuracy: 63.0538%
+Epoch 2: running_loss: 1.019634, train accuracy: 64.3470%
+Epoch 2: test accuracy: 66.6634%
+Epoch 3: running_loss: 0.874068, train accuracy: 69.5833%
+Epoch 3: test accuracy: 69.1950%
+Epoch 4: running_loss: 0.784865, train accuracy: 72.9387%
+Epoch 4: test accuracy: 72.4387%
+Epoch 5: running_loss: 0.704415, train accuracy: 75.8113%
+Epoch 5: test accuracy: 74.2979%
+Epoch 6: running_loss: 0.645252, train accuracy: 77.8546%
+Epoch 6: test accuracy: 76.4537%
+Epoch 7: running_loss: 0.590822, train accuracy: 79.6815%
+Epoch 7: test accuracy: 76.6021%
+Epoch 8: running_loss: 0.558257, train accuracy: 80.9395%
+Epoch 8: test accuracy: 78.2041%
+Epoch 9: running_loss: 0.515944, train accuracy: 82.2336%
+Epoch 9: test accuracy: 77.5218%
+Epoch 10: running_loss: 0.494573, train accuracy: 83.1891%
+Epoch 10: test accuracy: 78.9854%
+Epoch 11: running_loss: 0.466080, train accuracy: 84.0986%
+Epoch 11: test accuracy: 78.7282%
+Epoch 12: running_loss: 0.447038, train accuracy: 84.6554%
+Epoch 12: test accuracy: 80.4688%
+Epoch 13: running_loss: 0.425537, train accuracy: 85.3446%
+Epoch 13: test accuracy: 80.4984%
+Epoch 14: running_loss: 0.407110, train accuracy: 86.1839%
+Epoch 14: test accuracy: 82.2686%
+Epoch 15: running_loss: 0.389635, train accuracy: 86.7308%
+Epoch 15: test accuracy: 82.2983%
+Epoch 16: running_loss: 0.375918, train accuracy: 87.2135%
+Epoch 16: test accuracy: 81.9126%
+Epoch 17: running_loss: 0.352972, train accuracy: 88.1250%
+Epoch 17: test accuracy: 83.0498%
+Epoch 18: running_loss: 0.348887, train accuracy: 88.0489%
+Epoch 18: test accuracy: 83.3366%
+Epoch 19: running_loss: 0.322785, train accuracy: 89.3309%
+Epoch 19: test accuracy: 82.8619%
+Epoch 20: running_loss: 0.310726, train accuracy: 89.6234%
+Epoch 20: test accuracy: 84.1475%
+Epoch 21: running_loss: 0.302202, train accuracy: 89.7977%
+Epoch 21: test accuracy: 83.3861%
+Epoch 22: running_loss: 0.288566, train accuracy: 90.2524%
+Epoch 22: test accuracy: 83.5938%
+Epoch 23: running_loss: 0.279955, train accuracy: 90.5569%
+Epoch 23: test accuracy: 84.0388%
+Epoch 24: running_loss: 0.267684, train accuracy: 91.0156%
+Epoch 24: test accuracy: 83.2773%
+Epoch 25: running_loss: 0.254449, train accuracy: 91.4764%
+Epoch 25: test accuracy: 83.3960%
+Epoch 26: running_loss: 0.248735, train accuracy: 91.5365%
+Epoch 26: test accuracy: 85.2551%
+Epoch 27: running_loss: 0.238245, train accuracy: 92.1454%
+Epoch 27: test accuracy: 83.9695%
+Epoch 28: running_loss: 0.226340, train accuracy: 92.3698%
+Epoch 28: test accuracy: 84.5629%
+Epoch 29: running_loss: 0.220293, train accuracy: 92.7344%
+Epoch 29: test accuracy: 84.4640%
+Epoch 30: running_loss: 0.210772, train accuracy: 93.0589%
+Epoch 30: test accuracy: 84.1871%
+Epoch 31: running_loss: 0.206023, train accuracy: 93.2131%
+Epoch 31: test accuracy: 84.9189%
+Epoch 32: running_loss: 0.198643, train accuracy: 93.3474%
+Epoch 32: test accuracy: 85.5914%
+Epoch 33: running_loss: 0.185642, train accuracy: 93.8822%
+Epoch 33: test accuracy: 85.8188%
+Epoch 34: running_loss: 0.179373, train accuracy: 94.1607%
+Epoch 34: test accuracy: 84.9782%
+Epoch 35: running_loss: 0.177095, train accuracy: 94.1667%
+Epoch 35: test accuracy: 84.3157%
+Epoch 36: running_loss: 0.172467, train accuracy: 94.2869%
+Epoch 36: test accuracy: 84.8200%
+Epoch 37: running_loss: 0.164531, train accuracy: 94.7055%
+Epoch 37: test accuracy: 84.8991%
+Epoch 38: running_loss: 0.162151, train accuracy: 94.7236%
+Epoch 38: test accuracy: 85.5419%
+Epoch 39: running_loss: 0.158161, train accuracy: 94.8698%
+Epoch 39: test accuracy: 85.1167%
+Epoch 40: running_loss: 0.147411, train accuracy: 95.2364%
+Epoch 40: test accuracy: 85.7199%
+Epoch 41: running_loss: 0.145332, train accuracy: 95.2484%
+Epoch 41: test accuracy: 85.9771%
+Epoch 42: running_loss: 0.145622, train accuracy: 95.3305%
+Epoch 42: test accuracy: 85.8188%
+Epoch 43: running_loss: 0.135344, train accuracy: 95.7071%
+Epoch 43: test accuracy: 86.0759%
+Epoch 44: running_loss: 0.134114, train accuracy: 95.6370%
+Epoch 44: test accuracy: 85.3343%
+Epoch 45: running_loss: 0.124333, train accuracy: 95.9916%
+Epoch 45: test accuracy: 86.1748%
+Epoch 46: running_loss: 0.122022, train accuracy: 95.9976%
+Epoch 46: test accuracy: 85.7991%
+Epoch 47: running_loss: 0.123772, train accuracy: 96.0537%
+Epoch 47: test accuracy: 84.9486%
+Epoch 48: running_loss: 0.116691, train accuracy: 96.3221%
+Epoch 48: test accuracy: 85.8287%
+Epoch 49: running_loss: 0.114989, train accuracy: 96.3201%
+Epoch 49: test accuracy: 86.2045%
+Epoch 50: running_loss: 0.070139, train accuracy: 98.1490%
+Epoch 50: test accuracy: 87.4308%
+Epoch 51: running_loss: 0.058022, train accuracy: 98.5597%
+Epoch 51: test accuracy: 87.7670%
+Epoch 52: running_loss: 0.056059, train accuracy: 98.5998%
+Epoch 52: test accuracy: 87.6187%
+Epoch 53: running_loss: 0.051287, train accuracy: 98.7560%
+Epoch 53: test accuracy: 87.8263%
+Epoch 54: running_loss: 0.050780, train accuracy: 98.7740%
+Epoch 54: test accuracy: 87.7077%
+Epoch 55: running_loss: 0.048273, train accuracy: 98.8962%
+Epoch 55: test accuracy: 87.7472%
+Epoch 56: running_loss: 0.045541, train accuracy: 98.9523%
+Epoch 56: test accuracy: 87.9747%
+Epoch 57: running_loss: 0.043192, train accuracy: 98.9683%
+Epoch 57: test accuracy: 87.9252%
+Epoch 58: running_loss: 0.043618, train accuracy: 99.0304%
+Epoch 58: test accuracy: 88.0934%
+Epoch 59: running_loss: 0.041718, train accuracy: 99.0705%
+Epoch 59: test accuracy: 87.8066%
+Epoch 60: running_loss: 0.040695, train accuracy: 99.0625%
+Epoch 60: test accuracy: 87.7077%
+Epoch 61: running_loss: 0.040626, train accuracy: 99.0865%
+Epoch 61: test accuracy: 87.8857%
+Epoch 62: running_loss: 0.040559, train accuracy: 99.0805%
+Epoch 62: test accuracy: 88.0241%
+Epoch 63: running_loss: 0.037702, train accuracy: 99.2007%
+Epoch 63: test accuracy: 87.7868%
+Epoch 64: running_loss: 0.038152, train accuracy: 99.2167%
+Epoch 64: test accuracy: 87.9450%
+Epoch 65: running_loss: 0.037094, train accuracy: 99.1667%
+Epoch 65: test accuracy: 88.0439%
+Epoch 66: running_loss: 0.036627, train accuracy: 99.1747%
+Epoch 66: test accuracy: 87.9153%
+Epoch 67: running_loss: 0.036108, train accuracy: 99.2428%
+Epoch 67: test accuracy: 87.8758%
+Epoch 68: running_loss: 0.035351, train accuracy: 99.1767%
+Epoch 68: test accuracy: 87.8659%
+Epoch 69: running_loss: 0.034929, train accuracy: 99.2508%
+Epoch 69: test accuracy: 87.8165%
+Epoch 70: running_loss: 0.032472, train accuracy: 99.3470%
+Epoch 70: test accuracy: 87.7176%
+Epoch 71: running_loss: 0.032589, train accuracy: 99.3089%
+Epoch 71: test accuracy: 88.2219%
+Epoch 72: running_loss: 0.033872, train accuracy: 99.2508%
+Epoch 72: test accuracy: 87.8165%
+Epoch 73: running_loss: 0.031921, train accuracy: 99.3009%
+Epoch 73: test accuracy: 87.8956%
+Epoch 74: running_loss: 0.032569, train accuracy: 99.2969%
+Epoch 74: test accuracy: 87.6582%
+Epoch 75: running_loss: 0.030027, train accuracy: 99.3910%
+Epoch 75: test accuracy: 87.9549%
+Epoch 76: running_loss: 0.028703, train accuracy: 99.4471%
+Epoch 76: test accuracy: 87.9747%
+Epoch 77: running_loss: 0.028369, train accuracy: 99.3930%
+Epoch 77: test accuracy: 87.9846%
+Epoch 78: running_loss: 0.026868, train accuracy: 99.5032%
+Epoch 78: test accuracy: 87.9945%
+Epoch 79: running_loss: 0.028101, train accuracy: 99.4071%
+Epoch 79: test accuracy: 87.9549%
+Epoch 80: running_loss: 0.027344, train accuracy: 99.4591%
+Epoch 80: test accuracy: 87.9450%
+Epoch 81: running_loss: 0.027269, train accuracy: 99.4411%
+Epoch 81: test accuracy: 87.9153%
+Epoch 82: running_loss: 0.027842, train accuracy: 99.4391%
+Epoch 82: test accuracy: 88.0340%
+Epoch 83: running_loss: 0.026080, train accuracy: 99.4972%
+Epoch 83: test accuracy: 88.1131%
+Epoch 84: running_loss: 0.027382, train accuracy: 99.4511%
+Epoch 84: test accuracy: 87.9153%
+Epoch 85: running_loss: 0.026828, train accuracy: 99.4772%
+Epoch 85: test accuracy: 88.0538%
+Epoch 86: running_loss: 0.027938, train accuracy: 99.4391%
+Epoch 86: test accuracy: 87.9846%
+Epoch 87: running_loss: 0.027300, train accuracy: 99.4792%
+Epoch 87: test accuracy: 88.0637%
+Epoch 88: running_loss: 0.026444, train accuracy: 99.5052%
+Epoch 88: test accuracy: 87.9351%
+Epoch 89: running_loss: 0.026839, train accuracy: 99.4732%
+Epoch 89: test accuracy: 88.0934%
+Epoch 90: running_loss: 0.025891, train accuracy: 99.4872%
+Epoch 90: test accuracy: 88.0538%
+Epoch 91: running_loss: 0.027598, train accuracy: 99.4151%
+Epoch 91: test accuracy: 88.0340%
+Epoch 92: running_loss: 0.026271, train accuracy: 99.4892%
+Epoch 92: test accuracy: 88.0340%
+Epoch 93: running_loss: 0.025551, train accuracy: 99.4972%
+Epoch 93: test accuracy: 88.0142%
+Epoch 94: running_loss: 0.026228, train accuracy: 99.4651%
+Epoch 94: test accuracy: 88.0637%
+Epoch 95: running_loss: 0.026551, train accuracy: 99.4631%
+Epoch 95: test accuracy: 87.9945%
+Epoch 96: running_loss: 0.025677, train accuracy: 99.4972%
+Epoch 96: test accuracy: 88.0439%
+Epoch 97: running_loss: 0.027377, train accuracy: 99.4351%
+Epoch 97: test accuracy: 88.0044%
+Epoch 98: running_loss: 0.026029, train accuracy: 99.4872%
+Epoch 98: test accuracy: 87.9945%
+Epoch 99: running_loss: 0.026324, train accuracy: 99.5032%
+Epoch 99: test accuracy: 88.0538%
+Application 70409274 resources: utime ~9303s, stime ~792s, Rss ~1588040, inblocks ~1632298, outblocks ~127049

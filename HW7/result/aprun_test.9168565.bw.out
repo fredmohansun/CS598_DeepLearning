@@ -1,0 +1,16 @@
+----------------------------------------
+Begin Torque Prologue on nid25427
+at Wed Oct 31 12:17:48 CDT 2018
+Job Id:			9168565.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		aprun_test
+Requested resources:	nodes=1:ppn=16:xk,walltime=00:10:00,neednodes=1:ppn=16:xk
+Queue:			debug
+Account:		bauh
+End Torque Prologue:  0.147 elapsed
+----------------------------------------
+
+
+
+

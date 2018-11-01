@@ -1,0 +1,225 @@
+----------------------------------------
+Begin Torque Prologue on nid25253
+at Tue Oct  9 23:29:05 CDT 2018
+Job Id:			9090502.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		CIFAR100_ResNet
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=10:00:00
+Queue:			normal
+Account:		bauh
+End Torque Prologue:  0.120 elapsed
+----------------------------------------
+
+
+
+
+Files already downloaded and verified
+Files already downloaded and verified
+Data is ready...
+Initialization is done...
+Cuda is set up...
+Start Training...
+Epoch:0, Running Loss: 4.658544, Accuracy: 2.686000%
+Test Accuracy: 4.830000%
+Epoch:1, Running Loss: 3.923971, Accuracy: 9.160000%
+Test Accuracy: 9.320000%
+Epoch:2, Running Loss: 3.546895, Accuracy: 15.416000%
+Test Accuracy: 14.950000%
+Epoch:3, Running Loss: 3.271988, Accuracy: 20.338000%
+Test Accuracy: 17.290000%
+Epoch:4, Running Loss: 3.063700, Accuracy: 24.342000%
+Test Accuracy: 20.260000%
+Epoch:5, Running Loss: 2.847552, Accuracy: 28.392000%
+Test Accuracy: 24.470000%
+Epoch:6, Running Loss: 2.645876, Accuracy: 32.612000%
+Test Accuracy: 27.670000%
+Epoch:7, Running Loss: 2.460133, Accuracy: 36.476000%
+Test Accuracy: 31.800000%
+Epoch:8, Running Loss: 2.306477, Accuracy: 39.732000%
+Test Accuracy: 33.710000%
+Epoch:9, Running Loss: 2.173204, Accuracy: 42.420000%
+Test Accuracy: 35.840000%
+Epoch:10, Running Loss: 2.061831, Accuracy: 44.722000%
+Test Accuracy: 35.600000%
+Epoch:11, Running Loss: 1.955044, Accuracy: 47.146000%
+Test Accuracy: 39.800000%
+Epoch:12, Running Loss: 1.868191, Accuracy: 49.238000%
+Test Accuracy: 45.020000%
+Epoch:13, Running Loss: 1.791071, Accuracy: 51.088000%
+Test Accuracy: 42.660000%
+Epoch:14, Running Loss: 1.712173, Accuracy: 53.078000%
+Test Accuracy: 45.110000%
+Epoch:15, Running Loss: 1.644179, Accuracy: 54.360000%
+Test Accuracy: 45.090000%
+Epoch:16, Running Loss: 1.582135, Accuracy: 55.992000%
+Test Accuracy: 48.680000%
+Epoch:17, Running Loss: 1.530176, Accuracy: 57.356000%
+Test Accuracy: 49.770000%
+Epoch:18, Running Loss: 1.476135, Accuracy: 58.776000%
+Test Accuracy: 46.560000%
+Epoch:19, Running Loss: 1.420450, Accuracy: 59.904000%
+Test Accuracy: 51.520000%
+Epoch:20, Running Loss: 1.376043, Accuracy: 60.892000%
+Test Accuracy: 51.830000%
+Epoch:21, Running Loss: 1.337114, Accuracy: 62.012000%
+Test Accuracy: 50.440000%
+Epoch:22, Running Loss: 1.292501, Accuracy: 62.848000%
+Test Accuracy: 52.140000%
+Epoch:23, Running Loss: 1.246679, Accuracy: 64.308000%
+Test Accuracy: 51.560000%
+Epoch:24, Running Loss: 1.211839, Accuracy: 64.898000%
+Test Accuracy: 52.250000%
+Epoch:25, Running Loss: 1.171643, Accuracy: 66.038000%
+Test Accuracy: 50.950000%
+Epoch:26, Running Loss: 1.134862, Accuracy: 66.854000%
+Test Accuracy: 53.500000%
+Epoch:27, Running Loss: 1.107389, Accuracy: 67.832000%
+Test Accuracy: 50.120000%
+Epoch:28, Running Loss: 1.066503, Accuracy: 68.616000%
+Test Accuracy: 53.600000%
+Epoch:29, Running Loss: 1.042232, Accuracy: 69.424000%
+Test Accuracy: 53.740000%
+Epoch:30, Running Loss: 1.010095, Accuracy: 70.218000%
+Test Accuracy: 54.230000%
+Epoch:31, Running Loss: 0.977457, Accuracy: 70.906000%
+Test Accuracy: 55.060000%
+Epoch:32, Running Loss: 0.950122, Accuracy: 71.542000%
+Test Accuracy: 55.040000%
+Epoch:33, Running Loss: 0.925566, Accuracy: 72.340000%
+Test Accuracy: 53.900000%
+Epoch:34, Running Loss: 0.890990, Accuracy: 73.358000%
+Test Accuracy: 53.990000%
+Epoch:35, Running Loss: 0.865275, Accuracy: 73.766000%
+Test Accuracy: 57.310000%
+Epoch:36, Running Loss: 0.842980, Accuracy: 74.558000%
+Test Accuracy: 57.050000%
+Epoch:37, Running Loss: 0.814611, Accuracy: 75.250000%
+Test Accuracy: 56.950000%
+Epoch:38, Running Loss: 0.793336, Accuracy: 75.752000%
+Test Accuracy: 55.910000%
+Epoch:39, Running Loss: 0.762475, Accuracy: 76.586000%
+Test Accuracy: 55.180000%
+Epoch:40, Running Loss: 0.745052, Accuracy: 77.252000%
+Test Accuracy: 57.270000%
+Epoch:41, Running Loss: 0.713858, Accuracy: 78.034000%
+Test Accuracy: 56.700000%
+Epoch:42, Running Loss: 0.700405, Accuracy: 78.288000%
+Test Accuracy: 58.260000%
+Epoch:43, Running Loss: 0.672475, Accuracy: 79.088000%
+Test Accuracy: 58.290000%
+Epoch:44, Running Loss: 0.663617, Accuracy: 79.282000%
+Test Accuracy: 58.520000%
+Epoch:45, Running Loss: 0.639480, Accuracy: 80.016000%
+Test Accuracy: 57.110000%
+Epoch:46, Running Loss: 0.615736, Accuracy: 80.726000%
+Test Accuracy: 56.450000%
+Epoch:47, Running Loss: 0.601134, Accuracy: 81.268000%
+Test Accuracy: 58.080000%
+Epoch:48, Running Loss: 0.580237, Accuracy: 81.834000%
+Test Accuracy: 57.320000%
+Epoch:49, Running Loss: 0.560764, Accuracy: 82.248000%
+Test Accuracy: 56.990000%
+Epoch:50, Running Loss: 0.545006, Accuracy: 82.738000%
+Test Accuracy: 56.510000%
+Epoch:51, Running Loss: 0.528941, Accuracy: 83.058000%
+Test Accuracy: 56.740000%
+Epoch:52, Running Loss: 0.511503, Accuracy: 83.584000%
+Test Accuracy: 58.170000%
+Epoch:53, Running Loss: 0.491822, Accuracy: 84.194000%
+Test Accuracy: 58.530000%
+Epoch:54, Running Loss: 0.482176, Accuracy: 84.512000%
+Test Accuracy: 56.210000%
+Epoch:55, Running Loss: 0.465639, Accuracy: 85.154000%
+Test Accuracy: 57.000000%
+Epoch:56, Running Loss: 0.447423, Accuracy: 85.608000%
+Test Accuracy: 58.070000%
+Epoch:57, Running Loss: 0.436569, Accuracy: 85.846000%
+Test Accuracy: 58.160000%
+Epoch:58, Running Loss: 0.414342, Accuracy: 86.572000%
+Test Accuracy: 58.470000%
+Epoch:59, Running Loss: 0.414801, Accuracy: 86.344000%
+Test Accuracy: 59.860000%
+Epoch:60, Running Loss: 0.395726, Accuracy: 87.152000%
+Test Accuracy: 58.450000%
+Epoch:61, Running Loss: 0.376934, Accuracy: 87.674000%
+Test Accuracy: 58.730000%
+Epoch:62, Running Loss: 0.365678, Accuracy: 88.060000%
+Test Accuracy: 58.980000%
+Epoch:63, Running Loss: 0.356972, Accuracy: 88.352000%
+Test Accuracy: 57.500000%
+Epoch:64, Running Loss: 0.349095, Accuracy: 88.486000%
+Test Accuracy: 57.640000%
+Epoch:65, Running Loss: 0.333791, Accuracy: 88.750000%
+Test Accuracy: 59.840000%
+Epoch:66, Running Loss: 0.323578, Accuracy: 89.442000%
+Test Accuracy: 59.520000%
+Epoch:67, Running Loss: 0.315332, Accuracy: 89.686000%
+Test Accuracy: 59.660000%
+Epoch:68, Running Loss: 0.299077, Accuracy: 90.146000%
+Test Accuracy: 59.110000%
+Epoch:69, Running Loss: 0.298749, Accuracy: 90.148000%
+Test Accuracy: 57.570000%
+Epoch:70, Running Loss: 0.287846, Accuracy: 90.534000%
+Test Accuracy: 59.470000%
+Epoch:71, Running Loss: 0.274660, Accuracy: 91.040000%
+Test Accuracy: 60.490000%
+Epoch:72, Running Loss: 0.266027, Accuracy: 91.368000%
+Test Accuracy: 59.150000%
+Epoch:73, Running Loss: 0.253170, Accuracy: 91.674000%
+Test Accuracy: 60.240000%
+Epoch:74, Running Loss: 0.250113, Accuracy: 91.730000%
+Test Accuracy: 57.330000%
+Epoch:75, Running Loss: 0.241600, Accuracy: 91.982000%
+Test Accuracy: 60.600000%
+Epoch:76, Running Loss: 0.239745, Accuracy: 92.022000%
+Test Accuracy: 58.710000%
+Epoch:77, Running Loss: 0.233505, Accuracy: 92.132000%
+Test Accuracy: 59.890000%
+Epoch:78, Running Loss: 0.215496, Accuracy: 92.998000%
+Test Accuracy: 60.310000%
+Epoch:79, Running Loss: 0.212906, Accuracy: 92.966000%
+Test Accuracy: 59.820000%
+Epoch:80, Running Loss: 0.210563, Accuracy: 93.016000%
+Test Accuracy: 59.540000%
+Epoch:81, Running Loss: 0.201537, Accuracy: 93.274000%
+Test Accuracy: 60.770000%
+Epoch:82, Running Loss: 0.198272, Accuracy: 93.362000%
+Test Accuracy: 60.410000%
+Epoch:83, Running Loss: 0.186350, Accuracy: 93.774000%
+Test Accuracy: 60.470000%
+Epoch:84, Running Loss: 0.188761, Accuracy: 93.758000%
+Test Accuracy: 59.400000%
+Epoch:85, Running Loss: 0.184577, Accuracy: 93.842000%
+Test Accuracy: 60.480000%
+Epoch:86, Running Loss: 0.180074, Accuracy: 94.054000%
+Test Accuracy: 60.020000%
+Epoch:87, Running Loss: 0.179123, Accuracy: 94.142000%
+Test Accuracy: 60.450000%
+Epoch:88, Running Loss: 0.169021, Accuracy: 94.402000%
+Test Accuracy: 60.580000%
+Epoch:89, Running Loss: 0.167507, Accuracy: 94.496000%
+Test Accuracy: 61.230000%
+Epoch:90, Running Loss: 0.156961, Accuracy: 94.908000%
+Test Accuracy: 59.580000%
+Epoch:91, Running Loss: 0.160656, Accuracy: 94.648000%
+Test Accuracy: 61.040000%
+Epoch:92, Running Loss: 0.156119, Accuracy: 94.802000%
+Test Accuracy: 60.350000%
+Epoch:93, Running Loss: 0.144475, Accuracy: 95.264000%
+Test Accuracy: 60.550000%
+Epoch:94, Running Loss: 0.144918, Accuracy: 95.204000%
+Test Accuracy: 61.410000%
+Epoch:95, Running Loss: 0.142057, Accuracy: 95.348000%
+Test Accuracy: 61.560000%
+Epoch:96, Running Loss: 0.137430, Accuracy: 95.398000%
+Test Accuracy: 60.580000%
+Epoch:97, Running Loss: 0.130959, Accuracy: 95.718000%
+Test Accuracy: 60.280000%
+Epoch:98, Running Loss: 0.133455, Accuracy: 95.582000%
+Test Accuracy: 60.010000%
+Epoch:99, Running Loss: 0.125907, Accuracy: 95.858000%
+Test Accuracy: 61.450000%
+Training done... Now testing...
+Test Accuracy: 61.450000%
+Application 70088267 resources: utime ~9717s, stime ~341s, Rss ~1562160, inblocks ~1986496, outblocks ~102625
