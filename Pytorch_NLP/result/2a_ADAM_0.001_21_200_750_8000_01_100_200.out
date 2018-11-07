@@ -1,0 +1,21 @@
+Epoch 0: training accuracy: 71.5120%, loss: 0.545022, time: 166.31 seconds
+Epoch 1: training accuracy: 81.6960%, loss: 0.404080, time: 165.07 seconds
+Epoch 2: training accuracy: 85.1440%, loss: 0.343630, time: 165.05 seconds, test accuracy: 87.3080%, time: 97.65 seconds
+Epoch 3: training accuracy: 87.4720%, loss: 0.299033, time: 165.04 seconds
+Epoch 4: training accuracy: 89.9040%, loss: 0.252565, time: 165.08 seconds
+Epoch 5: training accuracy: 90.6920%, loss: 0.228542, time: 165.08 seconds, test accuracy: 86.5200%, time: 97.64 seconds
+Epoch 6: training accuracy: 92.7840%, loss: 0.192072, time: 165.03 seconds
+Epoch 7: training accuracy: 93.4800%, loss: 0.169033, time: 165.08 seconds
+Epoch 8: training accuracy: 94.3200%, loss: 0.150302, time: 165.06 seconds, test accuracy: 86.7040%, time: 97.64 seconds
+Epoch 9: training accuracy: 95.1200%, loss: 0.135026, time: 165.06 seconds
+Epoch 10: training accuracy: 95.4080%, loss: 0.127154, time: 165.07 seconds
+Epoch 11: training accuracy: 95.9000%, loss: 0.111572, time: 165.07 seconds, test accuracy: 86.6560%, time: 97.63 seconds
+Epoch 12: training accuracy: 96.7640%, loss: 0.096130, time: 165.07 seconds
+Epoch 13: training accuracy: 96.2520%, loss: 0.102886, time: 165.11 seconds
+Epoch 14: training accuracy: 96.9440%, loss: 0.087085, time: 165.05 seconds, test accuracy: 87.0960%, time: 97.63 seconds
+Epoch 15: training accuracy: 97.3360%, loss: 0.075085, time: 165.07 seconds
+Epoch 16: training accuracy: 97.4600%, loss: 0.073907, time: 165.10 seconds
+Epoch 17: training accuracy: 98.0120%, loss: 0.059537, time: 165.08 seconds, test accuracy: 86.7320%, time: 97.64 seconds
+Epoch 18: training accuracy: 97.8320%, loss: 0.061753, time: 165.07 seconds
+Epoch 19: training accuracy: 98.1000%, loss: 0.057752, time: 165.08 seconds
+Epoch 20: training accuracy: 98.1240%, loss: 0.055261, time: 165.05 seconds, test accuracy: 87.0640%, time: 97.63 seconds

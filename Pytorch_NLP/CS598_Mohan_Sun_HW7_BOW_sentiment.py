@@ -30,7 +30,7 @@ is_cuda = torch.cuda.is_available()
 vocab_size = 8000 if args.vocab_size is None else args.vocab_size
 no_of_hidden_units = 500 if args.no_of_hidden_units is None else args.no_of_hidden_units
 batch_size = 200 if args.batch_size is None else args.batch_size
-max_epoch = 6 if args.max_epoch is None else args.max_epoc
+max_epoch = 6 if args.max_epoch is None else args.max_epoch
 lr = (0.001 if args.ADAM else 0.01) if args.lr is None else args.lr
 savefile = '_'.join(['1a', 'ADAM' if args.ADAM else 'SGD', str(lr),str(max_epoch), str(batch_size), str(no_of_hidden_units), str(vocab_size)]) + '.out'
 print(savefile)

@@ -13,7 +13,7 @@ from torch.autograd import Variable
 import torch.distributed as dist
 import torch.backends.cudnn as cudnn
 
-from CS598_Mohan_Sun_HW7_RNN_model import RNN_model
+from CS598_Mohan_Sun_HW7_RNN_model import RNN_model_GloVe
 
 ## parser
 parser = argparse.ArgumentParser()
@@ -23,7 +23,6 @@ parser.add_argument('--nnDropout', action='store_true')
 parser.add_argument('-n', '--batch_size', type=int, help='Batch size')
 parser.add_argument('-t', '--max_epoch', type=int, help='Max epoch')
 parser.add_argument('-H', '--no_of_hidden_units', type=int, help='No of hidden units')
-parser.add_argument('-V', '--vocab_size', type=int, help='Vocab size')
 parser.add_argument('--lr', type=float, help='Learning rate')
 parser.add_argument('--TestSL', type=int, help='Test Sequence Length')
 parser.add_argument('--TrainSL', type=int, help='Train Sequence Length')
@@ -31,19 +30,20 @@ args = parser.parse_args()
 
 ## Hyperparas
 is_cuda = torch.cuda.is_available()
-vocab_size = 8000 if args.vocab_size is None else args.vocab_size
+glove_embeddings = np.load('preprocessed_data/glove_embeddings.npy')
+vocab_size = 100000
 no_of_hidden_units = 500 if args.no_of_hidden_units is None else args.no_of_hidden_units
 batch_size = 200 if args.batch_size is None else args.batch_size
 max_epoch = 21 if args.max_epoch is None else args.max_epoc
 lr = (0.001 if args.ADAM else 0.01) if args.lr is None else args.lr
 train_sl = 100 if args.TrainSL is None else args.TrainSL
-test_sl = 200 if args.TestSL is None else args.TestSL
+test_sl = 400 if args.TestSL is None else args.TestSL
 switches = [args.nnDropout,args.twice]
-savefile = '_'.join(['2a', 'ADAM' if args.ADAM else 'SGD', str(lr), str(max_epoch), str(batch_size), str(no_of_hidden_units), str(vocab_size), ''.join(list(map(str,map(int,switches)))), str(train_sl),str(test_sl)])
+savefile = '_'.join(['2b', 'ADAM' if args.ADAM else 'SGD', str(lr), str(max_epoch), str(batch_size), str(no_of_hidden_units), str(vocab_size), ''.join(list(map(str,map(int,switches)))), str(train_sl),str(test_sl)])
 
 ## Data
 train_inputs = []
-with io.open('preprocessed_data/imdb_train.txt','r',encoding='utf-8') as f:
+with io.open('preprocessed_data/imdb_train_glove.txt','r',encoding='utf-8') as f:
     lines = f.readlines()
 
 for line in lines:
@@ -58,7 +58,7 @@ train_label = np.zeros((25000,))
 train_label[0:12500] = 1
 
 test_inputs = []
-with io.open('preprocessed_data/imdb_test.txt','r',encoding='utf-8') as f:
+with io.open('preprocessed_data/imdb_test_glove.txt','r',encoding='utf-8') as f:
     lines = f.readlines()
 
 for line in lines:
@@ -73,7 +73,7 @@ test_label[0:12500] = 1
 vocab_size += 1
 
 ## Model setup
-model = RNN_model(vocab_size, no_of_hidden_units, switches)
+model = RNN_model_GloVe(no_of_hidden_units, switches)
 if is_cuda:
     model.cuda()
     model = nn.DataParallel(model, device_ids=range(torch.cuda.device_count()))
@@ -91,7 +91,7 @@ L_test_label = len(test_label)
 train_loss = []
 train_acc = []
 test_acc = []
-with io.open('result/' + savefile+'.out','w',encoding = 'utf-8') as f:
+with io.open('result/' + savefile +'.out','w',encoding = 'utf-8') as f:
     for epoch in range(max_epoch):
         model.train()
         epoch_acc = 0.0
@@ -113,12 +113,13 @@ with io.open('result/' + savefile+'.out','w',encoding = 'utf-8') as f:
                 else:
                     start_index = np.random.randint(sl-sequence_length+1)
                     inputs[j,:] = x[start_index:(start_index+sequence_length)]
+            inputs = glove_embeddings[inputs]
             label = train_label[I_permutation[i:i+batch_size]]
             if is_cuda:
-                inputs = Variable(torch.LongTensor(inputs)).cuda()
+                inputs = Variable(torch.FloatTensor(inputs)).cuda()
                 target = Variable(torch.FloatTensor(label)).cuda()
             else:
-                inputs = Variable(torch.LongTensor(inputs))
+                inputs = Variable(torch.FloatTensor(inputs))
                 target = Variable(torch.FloatTensor(label))
 
             optimizer.zero_grad()
@@ -158,12 +159,13 @@ with io.open('result/' + savefile+'.out','w',encoding = 'utf-8') as f:
                     else:
                         start_index = np.random.randint(sl-sequence_length+1)
                         inputs[j,:] = x[start_index:(start_index+sequence_length)]
+                inputs = glove_embeddings[inputs]
                 label = test_label[I_permutation[i:i+batch_size]]
                 if is_cuda:
-                    inputs = Variable(torch.LongTensor(inputs)).cuda()
+                    inputs = Variable(torch.FloatTensor(inputs)).cuda()
                     target = Variable(torch.FloatTensor(label)).cuda()
                 else:
-                    inputs = Variable(torch.LongTensor(inputs))
+                    inputs = Variable(torch.FloatTensor(inputs))
                     target = Variable(torch.FloatTensor(label))
 
                 with torch.no_grad():
@@ -180,4 +182,4 @@ with io.open('result/' + savefile+'.out','w',encoding = 'utf-8') as f:
         else:
             f.write('\n')
 
-torch.save(model, 'model/'+savefile+ '.model')
+torch.save(model, 'model/'+savefile+'.model')

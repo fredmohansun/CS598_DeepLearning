@@ -59,7 +59,7 @@ class BOW_model_GloVe(nn.Module):
         
         x = self.dropout1(F.relu(self.bn_hidden1(self.fc_hidden1(x))))
         if twice:
-            x = self.dropout2(F.relu(self.bn_hidden2(self.fc_hidden2(bow_embedding))))
+            x = self.dropout2(F.relu(self.bn_hidden2(self.fc_hidden2(x))))
         x = self.fc_output(x)
 
         return self.loss(x[:,0],t), x[:,0]

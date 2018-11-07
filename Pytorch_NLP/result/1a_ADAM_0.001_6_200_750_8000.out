@@ -1,0 +1,6 @@
+Epoch 0: training accuracy: 79.3920%, loss: 0.439573, time: 22.96 seconds, test accuracy 83.6480%, time: 5.56 seconds
+Epoch 1: training accuracy: 88.0160%, loss: 0.287628, time: 21.81 seconds, test accuracy 86.9680%, time: 5.58 seconds
+Epoch 2: training accuracy: 91.1520%, loss: 0.222459, time: 21.82 seconds, test accuracy 86.1280%, time: 5.57 seconds
+Epoch 3: training accuracy: 92.8880%, loss: 0.182045, time: 21.80 seconds, test accuracy 85.0520%, time: 5.57 seconds
+Epoch 4: training accuracy: 93.9480%, loss: 0.156671, time: 21.81 seconds, test accuracy 86.7160%, time: 5.58 seconds
+Epoch 5: training accuracy: 94.8960%, loss: 0.132519, time: 21.80 seconds, test accuracy 86.1680%, time: 5.57 seconds

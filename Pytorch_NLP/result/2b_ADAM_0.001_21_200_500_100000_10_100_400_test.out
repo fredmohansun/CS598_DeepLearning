@@ -1,0 +1,10 @@
+SL: 50, test accuracy: 77.8720%, loss: 0.478506, time: 9.23 seconds
+SL: 100, test accuracy: 82.9840%, loss: 0.386149, time: 19.60 seconds
+SL: 150, test accuracy: 85.5960%, loss: 0.330497, time: 28.96 seconds
+SL: 200, test accuracy: 87.1400%, loss: 0.302575, time: 42.69 seconds
+SL: 250, test accuracy: 88.0920%, loss: 0.287366, time: 52.73 seconds
+SL: 300, test accuracy: 88.3480%, loss: 0.280347, time: 63.53 seconds
+SL: 350, test accuracy: 88.6240%, loss: 0.271871, time: 73.89 seconds
+SL: 400, test accuracy: 88.8040%, loss: 0.269487, time: 84.47 seconds
+SL: 450, test accuracy: 88.9360%, loss: 0.265366, time: 95.03 seconds
+SL: 500, test accuracy: 89.0880%, loss: 0.263788, time: 105.82 seconds
