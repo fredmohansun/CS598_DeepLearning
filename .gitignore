@@ -2,6 +2,7 @@
 *.txt
 data/
 *.model
+*.optimizer
 *.tar.gz
 .DS_Store
 *.pdf
