@@ -1,0 +1,18 @@
+----------------------------------------
+Begin Torque Prologue on nid25435
+at Sun Nov 25 16:18:48 CST 2018
+Job Id:			9255539.bw
+Username:		tra437
+Group:			TRAIN_bauh
+Job name:		SingleFrame
+Requested resources:	nodes=1:ppn=16:xk,walltime=05:00:00,neednodes=1:ppn=16:xk
+Queue:			normal
+Account:		bauh
+End Torque Prologue:  0.125 elapsed
+----------------------------------------
+
+
+
+
+Application 70999318 exit codes: 1
+Application 70999318 resources: utime ~1s, stime ~22s, Rss ~122236, inblocks ~23450, outblocks ~1764

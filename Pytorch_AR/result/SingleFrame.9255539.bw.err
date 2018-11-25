@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "CS598_Mohan_Sun_HW9_Single_Frame.py", line 37, in <module>
+    class_list, train, test = getUCF101()
+  File "/mnt/c/scratch/training/tra437/CS598/Pytorch_AR/helper.py", line 14, in getUCF101
+    lines = train_flie.readlines()
+NameError: name 'train_flie' is not defined
